@@ -6,9 +6,7 @@
 3. 请通过 yo teams 命令，生成你的项目
 4. 请参考下面的官方说明进行测试
 
-Generate a Microsoft Teams application.
 
-TODO: Add your documentation here
 
 ## Getting started with Microsoft Teams Apps development
 
