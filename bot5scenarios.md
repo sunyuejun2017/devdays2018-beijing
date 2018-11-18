@@ -1,7 +1,7 @@
 # Microsoft Teams 机器人开发的五种场景
 > 陈希章 2018-11-18
 
-第一步，使用标准的Web App创建一个bot，在网页中调试，配置Git 仓库，下载代码，修改代码，提交，调试
+## 第一步，使用标准的Web App创建一个bot，在网页中调试，配置Git 仓库，下载代码，修改代码，提交，调试
 
 ``` javascript
 	bot.dialog('/', function (session) {
@@ -11,7 +11,7 @@
   ```
 
   
-第二步，修改成图文卡片消息
+## 第二步，修改成图文卡片消息
 
 ``` javascript
 	bot.dialog('/', function (session) {
@@ -37,7 +37,7 @@
 	});
 ```
 	
-第三步，修改成Form的形式进行会话
+## 第三步，修改成Form的形式进行会话
 
 
 ``` javascript
@@ -64,7 +64,7 @@
 
 ```
 
-第四步，使用LUIS来进行会话
+## 第四步，使用LUIS来进行会话
 
 在Bot Service中添加三个设置（需要通过 luis.ai 先创建好相关的语义模型）
 LuisAPIHostName
