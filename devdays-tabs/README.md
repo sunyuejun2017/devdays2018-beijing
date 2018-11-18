@@ -1,4 +1,10 @@
-# teamsappsample
+# 选项卡开发概述
+> 陈希章 2018-11-18
+
+1. 请安装NodeJS, VSCode
+2. 请安装必要的模块 npm i -g yo generator-teams
+3. 请通过 yo teams 命令，生成你的项目
+4. 请参考下面的官方说明进行测试
 
 Generate a Microsoft Teams application.
 
