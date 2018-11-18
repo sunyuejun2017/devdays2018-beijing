@@ -67,9 +67,10 @@
 ## 第四步，使用LUIS来进行会话
 
 在Bot Service中添加三个设置（需要通过 luis.ai 先创建好相关的语义模型）
-LuisAPIHostName
-LuisAppId
-LuisAPIKey
+
+* LuisAPIHostName
+* LuisAppId
+* LuisAPIKey
 
 修改代码如下
 
@@ -120,11 +121,14 @@ LuisAPIKey
 ## 第五步，改成使用QnAMaker的方式
 
 首先，安装一个特殊的包 npm install botbuilder-cognitiveservices --save
+
 其次，增加一个包导入的命令  var builder_cognitiveservices = require("botbuilder-cognitiveservices");
+
 接著，修改应用的配置（需要先通过 qnamaker.ai 先创建知识库）
-QnAKnowledgebaseId
-QnAAuthKey
-QnAEndpointHostName
+
+* QnAKnowledgebaseId
+* QnAAuthKey
+* QnAEndpointHostName
 
 最后，修改代码
 
@@ -182,4 +186,4 @@ QnAEndpointHostName
 	    ]);
 ```
 
-通过qnamaker.ai 了解背后的原理
+通过 https://qnamaker.ai 了解背后的原理
