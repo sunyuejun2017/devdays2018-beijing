@@ -2,14 +2,18 @@
 > 陈希章 2018-11-18
 
 第一步，使用标准的Web App创建一个bot，在网页中调试，配置Git 仓库，下载代码，修改代码，提交，调试
+
+``` javascript
 	bot.dialog('/', function (session) {
 	    //1. basic
 	    session.send('您好，我是机器人小强，我收到了您的消息 ' + session.message.text);
 	});
-  
+  ```
 
   
 第二步，修改成图文卡片消息
+
+``` javascript
 	bot.dialog('/', function (session) {
 	
 	    //2. card
@@ -31,7 +35,12 @@
 	    session.send(msg);
 	
 	});
+```
+	
 第三步，修改成Form的形式进行会话
+
+
+``` javascript
 	//3.form
 	bot.dialog('/',[
 	    function (session) {
@@ -52,13 +61,19 @@
 	            " 年的 " + session.userData.language + "经验.");
 	    }
 ]);
+
+```
+
 第四步，使用LUIS来进行会话
+
 在Bot Service中添加三个设置（需要通过 luis.ai 先创建好相关的语义模型）
 LuisAPIHostName
 LuisAppId
 LuisAPIKey
 
 修改代码如下
+
+``` javascript
 	var luisAppId = process.env.LuisAppId;
 	var luisAPIKey = process.env.LuisAPIKey;
 	var luisAPIHostName = process.env.LuisAPIHostName || 'westus.api.cognitive.microsoft.com';
@@ -97,8 +112,13 @@ LuisAPIKey
 	).triggerAction({
 	    matches: 'Cancel'
 	})
+```
+
 通过luis.ai 了解背后的原理（如何定义意图，训练等）
-第五步，改成使用QnAMaker的方式
+
+
+## 第五步，改成使用QnAMaker的方式
+
 首先，安装一个特殊的包 npm install botbuilder-cognitiveservices --save
 其次，增加一个包导入的命令  var builder_cognitiveservices = require("botbuilder-cognitiveservices");
 接著，修改应用的配置（需要先通过 qnamaker.ai 先创建知识库）
@@ -107,6 +127,8 @@ QnAAuthKey
 QnAEndpointHostName
 
 最后，修改代码
+
+``` javascript
 	// Recognizer and and Dialog for preview QnAMaker service
 	var previewRecognizer = new builder_cognitiveservices.QnAMakerRecognizer({
 	    knowledgeBaseId: process.env.QnAKnowledgebaseId,
@@ -158,4 +180,6 @@ QnAEndpointHostName
 	            }
 	        }
 	    ]);
+```
+
 通过qnamaker.ai 了解背后的原理
