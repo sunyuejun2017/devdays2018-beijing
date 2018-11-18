@@ -1,0 +1,11 @@
+C:\temp\teamsconnectorsample\bin\Debug\netcoreapp2.0\teamsconnectorsample.deps.json
+C:\temp\teamsconnectorsample\bin\Debug\netcoreapp2.0\teamsconnectorsample.runtimeconfig.json
+C:\temp\teamsconnectorsample\bin\Debug\netcoreapp2.0\teamsconnectorsample.runtimeconfig.dev.json
+C:\temp\teamsconnectorsample\bin\Debug\netcoreapp2.0\teamsconnectorsample.dll
+C:\temp\teamsconnectorsample\bin\Debug\netcoreapp2.0\teamsconnectorsample.pdb
+C:\temp\teamsconnectorsample\obj\Debug\netcoreapp2.0\teamsconnectorsample.csprojResolveAssemblyReference.cache
+C:\temp\teamsconnectorsample\obj\Debug\netcoreapp2.0\teamsconnectorsample.csproj.CoreCompileInputs.cache
+C:\temp\teamsconnectorsample\obj\Debug\netcoreapp2.0\teamsconnectorsample.AssemblyInfoInputs.cache
+C:\temp\teamsconnectorsample\obj\Debug\netcoreapp2.0\teamsconnectorsample.AssemblyInfo.cs
+C:\temp\teamsconnectorsample\obj\Debug\netcoreapp2.0\teamsconnectorsample.dll
+C:\temp\teamsconnectorsample\obj\Debug\netcoreapp2.0\teamsconnectorsample.pdb
